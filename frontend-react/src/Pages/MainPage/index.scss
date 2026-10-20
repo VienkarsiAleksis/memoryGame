@@ -1,0 +1,75 @@
+.mainPage {
+    display: flex;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    & > .black-capacity{
+
+        & .border{
+            display: flex;
+            width: 80%;
+            height: 90%;
+            border-radius: 1em;
+            box-shadow: 1px 1px 20px black;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            flex-direction: column;
+            
+            & .main-border{
+                // border: 1px solid black;
+                // width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 1em;
+                padding: 2em;
+                
+                & > h1{
+                    font-family: "Bebas Neue", sans-serif;
+                    font-weight: 400;
+                    font-size: 6em;
+                    font-style: normal;
+                }
+                & > p{
+                    font-family: "Bebas Neue", sans-serif;
+                    font-size: 1.5em;
+                    font-style: normal;
+                    width: 20em;
+                }
+                & > a{
+                    font-family: "Bebas Neue", sans-serif;
+                    font-size: 1.3em;
+                    font-style: normal;
+                    width: 8em;
+                    height: 2em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mainPage > .black-capacity .border .main-border > h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-size: 3em;
+        font-style: normal;
+    }
+    .mainPage > .black-capacity .border .main-border > p {
+        width: 12em;
+        font-size: 1em;
+    }
+    .mainPage > .black-capacity .border .main-border > a{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,177 @@
+.profile {
+    display: flex;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    & > .black-capacity{
+        background-color: rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex: 1;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+
+        & .border{
+            display: flex;
+            width: 80%;
+            height: 90%;
+            border-radius: 1em;
+            box-shadow: 1px 1px 20px black;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            flex-direction: column;
+
+            & > .profile-cont{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                
+                & > .options{
+                    width: 20em;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 2em;
+
+                    & > button{
+                        width: 10em;
+                        padding: 0.5em;
+                        cursor: pointer;
+                        font-family: "Bebas Neue", sans-serif;
+                        font-size: 1.3em;
+                        font-style: normal;
+                    }
+                }
+
+                & > .input-field{
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+
+                    & > .password{
+                        display: flex;
+                        flex: 1;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 1em;
+
+                        & > .input{
+                            display: flex;
+                            flex-direction: column;
+
+                            & > label{
+                                font-size: 2em;
+                            }
+                            & > input{
+                                width: 20em;
+                                height: 2em;
+                            }
+                        }
+                        & > button{
+                            width: 20%;
+                        }
+                    }
+
+                    & > .profile{
+                        display: flex;
+                        flex: 1;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 1em;
+
+                        & > .input{
+                            display: flex;
+                            flex-direction: column;
+
+                            & > label{
+                                font-size: 2em;
+                            }
+                            & > input{
+                                width: 20em;
+                                height: 2em;
+                            }
+                        }
+                        & > button{
+                            width: 20%;
+                        }
+                    }
+                    & > .theam{
+                        display: flex;
+                        flex: 1;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: row;
+                        gap: 1em;
+                        flex-wrap: wrap;
+    
+                        & > button{
+                            width: 150px;
+                            height: 150px;
+                            cursor: pointer;
+
+                            & > img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .profile > .black-capacity .border > .profile-cont{
+        flex-direction: column;
+    }
+    .profile > .black-capacity .border > .profile-cont > .options > button{
+        font-size: 1em;
+    }
+    .profile > .black-capacity .border > .profile-cont > .input-field > .theam > button{
+        width: 100px;
+        height: 100px;
+    }
+    .profile > .black-capacity .border > .profile-cont > .options{
+        width: auto;
+    }
+    .profile > .black-capacity .border > .profile-cont > .input-field > .profile{
+        width: 100%;
+        margin: 1em;
+    }
+    .profile > .black-capacity .border > .profile-cont > .input-field > .profile > .input{
+        width: 90%;
+    }
+    .profile > .black-capacity .border > .profile-cont > .input-field > .password > .input{
+        width: 90%;
+    }
+    .profile > .black-capacity .border > .profile-cont > .input-field > .profile > .input > input{
+        width: auto;
+    }
+    .profile > .black-capacity .border > .profile-cont > .input-field > .password > .input > input{
+        width: auto;
+    }
+    .profile > .black-capacity .border{
+        height: auto;
+    }
+    .profile > .black-capacity .border > .profile-cont > .input-field > .theam{
+        margin: 2em;
+    }
+    .profile > .black-capacity .border > .profile-cont > .input-field > .password{
+        margin: 1em;
+    }
+    .profile > .black-capacity{
+        height: 60em;
+    }
+}

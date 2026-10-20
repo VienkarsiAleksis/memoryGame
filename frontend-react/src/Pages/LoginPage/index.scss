@@ -1,0 +1,83 @@
+.loginPage{
+    display: flex;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    & > .black-capacity2{
+
+        & > .back{
+            background-color: rgb(255, 208, 54);
+            border: 4px solid rgb(255, 191, 0);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            text-decoration: none;
+            color: black;
+            padding: 0.5em;
+        }
+
+        & > .login-border{
+            height: auto;
+            width: 20%;
+            display: flex;
+            border-radius: 1em;
+            box-shadow: 1px 1px 20px black;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            flex-direction: column;
+            padding: 3em;
+            gap: 1em;
+
+            & > h1{
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 400;
+                font-size: 3em;
+                font-style: normal;
+                
+            }
+
+            & > form {
+                display: flex;
+                flex-direction: column;
+                & .input{
+                    display: flex;
+                    flex-direction: column;
+
+                    & > label{
+                        font-family: "Bebas Neue", sans-serif;
+                        font-size: 1.3em;
+                        font-style: normal;
+                    }
+
+                    & > input{
+                        height: 2em;
+                    }
+                }
+                & > button{
+                    height: 2em;
+                    margin: 10px 0px;
+                }
+                & > a{
+                    font-family: "Bebas Neue", sans-serif;
+                    font-size: 1.2em;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .loginPage > .black-capacity2 > .login-border{
+        width: 60%;
+    }
+}
+
+
+

@@ -1,0 +1,116 @@
+.shopPage {
+    display: flex;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    & > .black-capacity{
+
+        & .border{
+            display: flex;
+            width: 80%;
+            height: 90%;
+            border-radius: 1em;
+            box-shadow: 1px 1px 20px black;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            flex-direction: column;
+
+            
+            & .main-border{
+                display: flex;
+                gap: 10px;
+                height: auto;
+                width: 90%;
+                margin: 2em auto;
+                flex-wrap: wrap;
+
+                & > .sale{
+                    display: flex;
+                    height: 7em;
+                    width: 5em;
+                    background-color: #e0e0e0;
+                    border-radius: 5px;
+                    font-size: 2em;
+                    font-family: "Bebas Neue", sans-serif;
+                    flex-direction: column;
+                    border: none;
+
+                    & > button{
+                        margin: 0;
+                        padding: 0;
+                        height: 10em;
+                        border-radius: 5px;
+                        border: 1px solid black;
+                        cursor: pointer;
+                    }
+                    &  img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                        border: 1px solid black;
+                    }
+
+                    & p {
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.coins{
+    margin-left: 2em;
+    margin-top: 0.5em;
+    font-size: 26px;
+}
+
+.popup{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 5px;
+    padding: 3em;
+    flex-direction: column;
+
+    & > p {
+        font-size: 25px;
+    }
+    & > button{
+        padding: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .shopPage > .black-capacity .border .main-border > .sale{
+        height: 6em;
+        width: 4em
+    }
+    .shopPage > .black-capacity .border .main-border > .sale p{
+        font-size: 18px;
+    }
+    .shopPage > .black-capacity .border{
+        height: auto;
+    }
+    .coins{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 26px;
+    }
+    .shopPage > .black-capacity .border .main-border{
+        justify-content: center;
+    }
+    .shopPage{
+        height: auto;
+    }
+    .shopPage > .black-capacity .border{
+        margin: 2em;
+    }
+}
